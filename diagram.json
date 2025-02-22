@@ -1,0 +1,27 @@
+{
+    "version": 1,
+    "author": "Muhammad Hakam Ulumuddin",
+    "editor": "wokwi",
+    "parts": [
+      { "type": "wokwi-arduino-uno", "id": "uno", "top": 39, "left": -10.2, "attrs": {} },
+      {
+        "type": "wokwi-lcd1602",
+        "id": "lcd1",
+        "top": -214.4,
+        "left": 140,
+        "attrs": { "pins": "i2c" }
+      }
+    ],
+    "connections": [
+      [ "lcd1:SCL", "uno:A5.2", "cyan", [ "h-67.2", "v201.9" ] ],
+      [ "lcd1:SDA", "uno:A4.2", "yellow", [ "h-57.6", "v211.4" ] ],
+      [ "lcd1:VCC", "uno:5V", "red", [ "h-259.2", "v499.3", "h9.6" ] ],
+      [
+        "lcd1:GND",
+        "uno:GND.3",
+        "black",
+        [ "h-307.2", "v556.8", "h9.6", "v0", "h96", "v0", "h288" ]
+      ]
+    ],
+    "dependencies": {}
+  }
